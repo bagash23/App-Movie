@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "233597391658",
+    "project_id": "bwa-mov-731a2",
+    "storage_bucket": "bwa-mov-731a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233597391658:android:c71dde6b2ccdcd65338453",
+        "android_client_info": {
+          "package_name": "com.bagas.bwamov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233597391658-et0rlgfgdu673rfa5fslb6q9v02l7ksl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Kr_u3oE9Wa-y70Sez66YsnFVGI_kAcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233597391658-et0rlgfgdu673rfa5fslb6q9v02l7ksl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
