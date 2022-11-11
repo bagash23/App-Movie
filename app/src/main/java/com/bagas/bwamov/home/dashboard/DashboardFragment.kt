@@ -3,6 +3,7 @@ package com.bagas.bwamov.home.dashboard
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -56,7 +57,7 @@ class DashboardFragment : Fragment() {
 //        manggil data nama
         binding.ivNamaDashboard.setText(preferences.getValues("nama"))
 //        memanggil saldo dengan menkonfer ke rupiah
-        if (preferences.getValues("saldo").equals("")) {
+        if (!preferences.getValues("saldo").equals("")) {
             currency(preferences.getValues("saldo")!!.toDouble(), binding.ivSaldoDashboard)
         }
 
@@ -65,6 +66,8 @@ class DashboardFragment : Fragment() {
             .load(preferences.getValues("url"))
             .apply(RequestOptions.circleCropTransform())
             .into(binding.ivProfileDashboard)
+
+        Log.v("tamvan", "url "+preferences.getValues("url"))
 
 //        pemanggilan recyle view
         binding.rvNowPlaying.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)

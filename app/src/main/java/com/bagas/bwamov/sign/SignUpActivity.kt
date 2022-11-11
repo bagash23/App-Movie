@@ -83,7 +83,7 @@ class SignUpActivity : AppCompatActivity() {
                 if (user == null) {
 //                    simpan ke database
                     mDatabseReference.child(sUsername).setValue(data)
-                    val goSignUpPhoto = Intent(this@SignUpActivity, SignUpPhotoActivity::class.java).putExtra("nama", data.nama)
+                    val goSignUpPhoto = Intent(this@SignUpActivity, SignUpPhotoActivity::class.java).putExtra("data", data)
                     startActivity(goSignUpPhoto)
 
                 } else {
